@@ -11,7 +11,7 @@ This project implements the control stack of an autonomous hovercraft around the
 The firmware is derived from the Chengdu Seekfree STC32G12K128 open-source library. It retains the upstream low-level drivers and copyright notices while adding hovercraft-specific navigation, control, parameter management, and debugging modules. This repository is a competition project archive, not an official Seekfree project.
 
 <p align="center">
-  <img src="docs/images/hovercraft-prototype.jpg" alt="Hovercraft hardware prototype" width="560">
+  <img src="docs/images/气垫船实物图片.jpg" alt="Hovercraft hardware prototype" width="560">
 </p>
 
 <p align="center"><em>Hardware prototype with two front ducted fans, the controller, and the sensor platform</em></p>

@@ -11,7 +11,7 @@
 项目在成都逐飞科技 STC32G12K128 开源库基础上开发，保留了原有底层驱动和版权声明，在其上实现了气垫船相关的控制、导航、参数管理与调试模块。本仓库为参赛工程归档，不是逐飞科技官方项目。
 
 <p align="center">
-  <img src="docs/images/hovercraft-prototype.jpg" alt="气垫船实物原型" width="560">
+  <img src="docs/images/气垫船实物图片.jpg" alt="气垫船实物原型" width="560">
 </p>
 
 <p align="center"><em>气垫船实物原型：前置双涵道风扇、控制器与传感器平台</em></p>
