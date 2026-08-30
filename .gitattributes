@@ -1,0 +1,20 @@
+* text=auto
+
+# Repository documentation
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Keil and C251 source files
+*.c text eol=crlf
+*.h text eol=crlf
+*.txt text eol=crlf
+*.uvproj text eol=crlf
+*.bat text eol=crlf
+
+# Precompiled target libraries
+*.LIB binary
+*.lib binary
+*.jpg binary
+*.jpeg binary
+*.png binary

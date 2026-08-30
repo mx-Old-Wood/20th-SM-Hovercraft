@@ -1,0 +1,62 @@
+# Keil / MDK build output
+**/Out_File/
+**/Objects/
+**/Listings/
+
+# Compiler and linker artifacts
+*.d
+*.o
+*.ko
+*.obj
+*.elf
+*.axf
+*.ilk
+*.map
+*.exp
+*.crf
+*.lst
+*.__i
+*.lnp
+*.dep
+*.iex
+*.hex
+*.build_log.htm
+
+# Keil per-user state
+*.uvgui.*
+*.uvguix.*
+*.uvopt
+*.uvoptx
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Generated libraries and shared objects
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Host executables and debug data
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*~
