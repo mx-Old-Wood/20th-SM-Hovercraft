@@ -69,7 +69,7 @@ flowchart LR
 | MCU | STC32G12K128 |
 | IDE / 编译器 | Keil MDK for C251 V5.60 |
 | 姿态传感器 | 逐飞 IMU660RA |
-| 定位模块 | TAU1201 GPS |
+| 定位模块 | TAU1201 GPS（代码内置驱动） |
 | 赛道感知 | 线阵 CCD |
 | 速度反馈 | 增量式编码器 |
 | 调试与交互 | LCD、按键、无线串口、VOFA |
@@ -109,4 +109,12 @@ Seekfree_STC32G12K128_Opensource_Library/
 
 ## 来源与许可
 
-工程所附版本记录显示，基础库版本为成都逐飞科技 STC32G12K128 开源库 V1.9.1（2024-12-30）。仓库保留上游源码中的版权声明和根目录 [GPLv3 许可证](LICENSE)。部分源码与预编译库包含单独的版权或使用说明，具体边界见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+本工程引用或参考的逐飞科技上游项目如下：
+
+| 上游项目 | 用途或关系 | 地址 |
+| --- | --- | --- |
+| STC32G12K128 Library | 主控 SDK、底层外设驱动和 Keil 工程基础 | [seekfree/STC32G12K128_Library](https://gitee.com/seekfree/STC32G12K128_Library.git) |
+| STC32G Brushless Driver Project | 无刷驱动相关实现参考 | [seekfree/STC32G_Brushless_Driver_Project](https://gitee.com/seekfree/STC32G_Brushless_Driver_Project.git) |
+| GN42A Product | GPS 产品驱动与接口参考 | [seekfree/GN42A_Product](https://gitee.com/seekfree/GN42A_Product.git) |
+
+工程所附版本记录显示，STC32G12K128 基础库版本为 V1.9.1（2024-12-30）。当前代码中的 GPS 设备驱动文件为 `SEEKFREE_GPS_TAU1201.c/.h`；上表中的 GN42A 仓库作为 GPS 模块的上游参考记录，不代表本仓库已经完成 GN42A 硬件适配。仓库保留上游源码中的版权声明和根目录 [GPLv3 许可证](LICENSE)。部分源码与预编译库包含单独的版权或使用说明，具体边界见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

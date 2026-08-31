@@ -69,7 +69,7 @@ This organization separates lower-rate interaction and parsing from time-sensiti
 | MCU | STC32G12K128 |
 | IDE / compiler | Keil MDK for C251 V5.60 |
 | IMU | Seekfree IMU660RA |
-| Positioning | TAU1201 GPS |
+| Positioning | TAU1201 GPS (driver included in this source tree) |
 | Track sensing | Linear CCD |
 | Speed feedback | Incremental encoder |
 | Debugging and input | LCD, keys, wireless UART, VOFA |
@@ -99,4 +99,12 @@ Routine build output and per-user Keil state are excluded from version control. 
 
 ## Origin and License
 
-The bundled version history identifies the base as Chengdu Seekfree's STC32G12K128 open-source library V1.9.1, dated 2024-12-30. Upstream copyright notices and the root [GPLv3 license](LICENSE) are retained. Some source files and precompiled libraries carry separate notices; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
+The project references the following Chengdu Seekfree upstream projects:
+
+| Upstream project | Role or relationship | Link |
+| --- | --- | --- |
+| STC32G12K128 Library | MCU SDK, low-level drivers, and Keil project base | [seekfree/STC32G12K128_Library](https://gitee.com/seekfree/STC32G12K128_Library.git) |
+| STC32G Brushless Driver Project | Reference for brushless motor driver implementation | [seekfree/STC32G_Brushless_Driver_Project](https://gitee.com/seekfree/STC32G_Brushless_Driver_Project.git) |
+| GN42A Product | Reference for GPS product driver and interface | [seekfree/GN42A_Product](https://gitee.com/seekfree/GN42A_Product.git) |
+
+The bundled version history identifies the STC32G12K128 library base as V1.9.1, dated 2024-12-30. The current source tree contains the `SEEKFREE_GPS_TAU1201.c/.h` driver; the GN42A repository is recorded as a GPS upstream reference and does not imply that GN42A hardware has been adapted here. Upstream copyright notices and the root [GPLv3 license](LICENSE) are retained. Some source files and precompiled libraries carry separate notices; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
